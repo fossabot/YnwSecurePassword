@@ -5,6 +5,7 @@
 
 import validator from '../src/validator';
 import { ResultValidatorI } from '../src/interfaces';
+import { ALL_CHARACTER_CONFIG } from '../src';
 
 describe('Test validator', () => {
 	describe('Tests validator [arg undefined]', () => {
@@ -113,6 +114,13 @@ describe('Test validator', () => {
 			const result: ResultValidatorI = validator('test2020Test', 10);
 			expect(result.isValid).toBeFalsy();
 			expect(result.error).toBe('Error rules');
+		});
+	});
+
+	describe('Tests validator [arg ConfigI]', () => {
+		it('validator [password = Tst10893, arg = ALL_CHARACTER_CONFIG]; should return true', () => {
+			const result: ResultValidatorI = validator('Tst10893', ALL_CHARACTER_CONFIG);
+			expect(result.isValid).toBeTruthy();
 		});
 	});
 });
