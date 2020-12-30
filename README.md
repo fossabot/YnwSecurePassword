@@ -3,6 +3,7 @@
 ##### A JavaScript secure password library for generating and validate a secure password.
 [![Build Status](https://travis-ci.com/YNW-Team/YnwSecurePassword.svg?branch=main)](https://travis-ci.com/YNW-Team/YnwSecurePassword)
 [![License: MIT](https://img.shields.io/badge/License-MIT-blue.svg)](LICENSE)
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FYNW-Team%2FYnwSecurePassword.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2FYNW-Team%2FYnwSecurePassword?ref=badge_shield)
 
 
 ## Features
@@ -91,3 +92,6 @@ console.log(password_with_config.isValid)
 [YnwSecurePassword](http://ynw-tema/YnwSecurePassword) is freely distributable under the terms of the [MIT license](LICENSE).
 
 
+
+
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2FYNW-Team%2FYnwSecurePassword.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2FYNW-Team%2FYnwSecurePassword?ref=badge_large)
