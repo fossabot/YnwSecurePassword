@@ -37,11 +37,13 @@
 		"build": "tsc",
 		"test": "yarn run lint && jest  --coverage",
 		"prettier": "prettier --write \"{,**/}*.{ts,js,json,md,yml}\"",
-		"lint": "yarn prettier && tslint --project . --fix"
+		"lint": "yarn prettier && tslint --project . --fix",
+		"coveralls": "yarn test && cat ./coverage/lcov.info | coveralls"
 	},
 	"devDependencies": {
 		"@types/jest": "^26.0.19",
 		"@types/node": "^14.14.16",
+		"coveralls": "^3.1.0",
 		"jest": "^26.6.3",
 		"prettier": "^2.2.1",
 		"ts-jest": "^26.4.4",
